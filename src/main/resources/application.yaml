@@ -1,0 +1,39 @@
+
+api.version: 1.2.0
+
+server:
+  port: 8855
+
+
+spring:
+  profiles:
+    active: '@active.profile@'
+  application:
+    name: quepro-remote-system
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.35.4.10:3306/qpro_hajj_central_v4
+    username: root
+    password: 12345
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      jdbc.lob.non_contextual_creation: true
+      ddl-auto: validate
+
+
+logging:
+  level:
+    root: INFO
+    reactor:
+      netty:
+        http:
+          client: DEBUG
+    com:
+      ba:
+        quepro:
+          token:
+            system: INFO
