@@ -33,9 +33,5 @@ public class SendTokenController {
         return new ResponseEntity<>("Ok", HttpStatus.OK);
     }
 
-    @GetMapping("get-token3")
-    public ResponseEntity<?> getToken3() {
-        return new ResponseEntity<>("Ok", HttpStatus.OK);
-    }
 
 }

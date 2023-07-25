@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "edc07804-52fe-40fd-a6dc-7a19e6ad9ace",
+		"name": "Quepro Remote Notification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27535415"
+	},
+	"item": [
+		{
+			"name": "Service Info",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenName",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "{{TokenUrl}}",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{clientSecret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientId}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/get-service-info",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-service-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service Center Info",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenName",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "{{TokenUrl}}",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{clientSecret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientId}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/get-service-center-info",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-service-center-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Remote Token",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenName",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "{{TokenUrl}}",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{clientSecret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientId}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scId\": 1,\n    \"rtDate\": \"2023-07-24\",\n    \"rtTime\": \"17:00:00\",\n    \"issuedDate\": null,\n    \"webToken\": \"00012\",\n    \"tokenNo\": null,\n    \"refData\": \"<refData><source>REMOTE_TOKEN_USER</source><tryTime>16:06:00</tryTime><issueDate>2023-07-22</issueDate><tokenState>0</tokenState><accountNum>01787671331</accountNum><accNo>111111111111111</accNo><tokenIssueFrom>WEB_TOKEN</tokenIssueFrom><serviceId>2</serviceId><mail>mdrony5552@gmail.com</mail><userId>0</userId><scId>1</scId><sdcId>0</sdcId><serviceMediumMaster></serviceMediumMaster><serviceMediumMasterText></serviceMediumMasterText><serviceMediumDetails></serviceMediumDetails><serviceMediumDetailsText></serviceMediumDetailsText></refData>\",\n    \"confirm\": false,\n    \"webTokenTime\": \"16:06:00\",\n    \"serverTime\": null,\n    \"confirmSmsToCust\": 0,\n    \"smsTime\": null,\n    \"confirmEmailToManage\": 0,\n    \"emailTime\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/remote-token",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"remote-token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8855",
+			"type": "string"
+		},
+		{
+			"key": "clientSecret",
+			"value": "uK34kVnGQYQ0lWeTohny8W4NgCiqUCTv",
+			"type": "string"
+		},
+		{
+			"key": "clientId",
+			"value": "qapi",
+			"type": "string"
+		},
+		{
+			"key": "TokenUrl",
+			"value": "https://idpv2.oss.net.bd/realms/q-cloud/protocol/openid-connect/token",
+			"type": "string"
+		}
+	]
+}
